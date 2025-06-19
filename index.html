@@ -3,9 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Bhanu Vikas Java Full Stack Developer.">
+    <meta name="description" content="This is a profile page of Bhanu Vikas Molugu">
+    <meta name="author" content="Bhanu Vikas Molugu">
+    <meta http-equiv="refresh" content="10"url="http://localhost:8080/profile">
+    <meta name="robots" content="index, follow">
     <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <header>
+        <h1>Bhanu Vikas's profile</h1>
+    </header>
+    <main>
+        <!-- Personal Information -->
+        <section >
+            <div class="mai">
+                <div class="l"> 
+                    <h2>Personal Information</h2>
+                    <img src="./Assets/images/Bhanu.jpg" alt=" " width="20%" height="15%" >
+                    <p><strong>Name:</strong> Bhanu Vikas</p>
+                    <p><strong>Branch:</strong> Computer Science and Engineering</p>
+                    <p><strong>Year:</strong> 3rd</p>
+                    <p><strong>College:</strong> Malla Reddy University</p>
+                </div>
+                <div class="r">
+                    <iframe src="https://www.mallareddyuniversity.ac.in/" frameborder="0" width="100%" height="300px"></iframe>
+                </div>
+            </div>
+            <!-- <h2>Personal Information</h2>
+            <img src="./Assets/images/Bhanu.jpg" alt=" " width="20%" height="15%" >
+            <p><strong>Name:</strong> Bhanu Vikas</p>
+            <p><strong>Branch:</strong> Computer Science and Engineering</p>
+            <p><strong>Year:</strong> 3rd</p>
+            <p><strong>College:</strong> Malla Reddy University</p> -->
+        </section>
+         <!-- Acadamic Performance -->
+        <section>
+            <h2>Academic Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Subject</th>
+                        <th>CGPA</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1st</td>
+                            <td>Maths, Python, SDf</td>
+                            <td>7.5</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>DSA, OOSE, OS, CN</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>Java, Web Development</td>
+                            <td>8.5</td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </section>
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+
+            <!-- <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+            <ul>
+                <li><strong>Operating System</strong>Windows & Linux</li>
+                <li><strong>Languages:</strong>Java, Python</li>
+                <li><strong>Front End:</strong>HTML, CSS, Bootstrap</li>
+                <li><strong>Front End Frameworks:</strong>Reactjs</li>
+                <li><strong>Server Frameworks:</strong> Spring, Node.Js</li>
+                <li><strong>DBMS:</strong> MySQL, MongoDB</li>
+
+            </ul>
+        </section>
+        <!-- Hobbies & Interests -->
+        <section>
+            <h2>Hobbies & Interests</h2>
+            <ol>
+                <li>Watching Movies</li>
+                <li>Web Development</li>
+                <li>Cricket</li>
+                <li>Nothing</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="#">
+                <div class="formgrp">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="w">
+                </div>
+                <div class="formgrp">
+                    <label for="When to call"><strong>When to call</strong></label>
+                    <input type="date" name="contact" id="w">
+                    <input type="time" name="contact" id="w">
+                </div>
+                <div class="formgrp">
+                    <label for="Contact"><strong>Contact</strong></label>
+                    <input type="text" name="contact" id="w">
+                </div>
+                <div class="formgrp">
+                    <label for="Description"><strong>Description</strong></label>
+                    <textarea name="Description" id="desc" rows="6"></textarea>
+                </div>
+                <div class="formgrp">
+                    <label for="Linkedin"><strong>Linkedin Profile Link</strong></label>
+                    <input type="url" name="url" id="w">
+                </div>
+                <div class="formgrp">
+                    <input type="submit" name="Submit" id="su">
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
