@@ -1,0 +1,82 @@
+.direction-section {
+  margin-bottom: var(--section-gap);
+}
+
+.direction-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--stack-md);
+}
+
+@media (min-width: 768px) {
+  .direction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.direction-card {
+  padding: var(--stack-lg);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--stack-md);
+}
+
+.primary-card {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.secondary-card {
+  background-color: var(--surface-container-high);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .secondary-card {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+}
+
+.direction-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.text-primary-fixed {
+  color: #e0e2e9; /* Approx from original CSS for text-primary-fixed */
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
+
+.direction-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.direction-desc {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.uppercase-sub {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  font-family: var(--font-mono);
+}
+
+.direction-list {
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.direction-list li {
+  margin-bottom: 8px;
+}

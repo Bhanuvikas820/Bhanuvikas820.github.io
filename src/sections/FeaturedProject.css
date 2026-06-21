@@ -1,0 +1,111 @@
+.featured-section {
+  margin-bottom: var(--section-gap);
+}
+
+.featured-header {
+  margin-bottom: var(--stack-md);
+}
+
+.featured-card {
+  background-color: var(--surface-container);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .featured-card {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 7fr 5fr;
+  }
+}
+
+.featured-visual {
+  min-height: 400px;
+  background-color: var(--surface-container-high);
+}
+
+.featured-placeholder-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--surface-container-low), var(--surface-container-high));
+}
+
+.featured-content {
+  padding: var(--stack-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .featured-content {
+    padding: var(--stack-lg);
+  }
+}
+
+.featured-block {
+  margin-bottom: 32px;
+}
+
+.featured-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+  margin-bottom: 8px;
+}
+
+.featured-block p {
+  color: var(--on-surface);
+  font-size: 16px;
+}
+
+.featured-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-highlight {
+  display: flex;
+  align-items: center;
+  color: var(--on-surface-variant);
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.featured-verified {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--on-surface);
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .featured-verified {
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+}
+
+.featured-verified-icon {
+  color: var(--tertiary);
+  font-size: 24px;
+}
