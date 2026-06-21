@@ -15,7 +15,10 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="hero-label">Available for select collaborations</span>
+          <div className="availability-badge">
+            <span className="status-dot"></span>
+            <span className="hero-label">Available for select collaborations</span>
+          </div>
           <h1 className="hero-title">{portfolioData.hero.headline}</h1>
           <p className="hero-desc">{portfolioData.hero.supportingCopy}</p>
           

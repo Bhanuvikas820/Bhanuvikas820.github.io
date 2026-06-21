@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <main style={{ paddingTop: '128px' }}>
+      <main style={{ paddingTop: '80px' }}>
         <Hero />
         <About />
         <FeaturedProject />
