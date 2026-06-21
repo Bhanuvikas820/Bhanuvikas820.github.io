@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Hero from './sections/Hero';
@@ -11,9 +11,24 @@ import Direction from './sections/Direction';
 import Contact from './sections/Contact';
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <div className="app-wrapper">
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main style={{ paddingTop: '128px' }}>
         <Hero />
         <About />
